@@ -28,7 +28,7 @@ version = "2023.05"
 
 project {
 
-    vcsRoot(Repo2)
+    //vcsRoot(Repo2)
 
     buildType(Build1)
 }
@@ -38,7 +38,7 @@ object Build1 : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
-        root(Repo2)
+        //root(Repo2)
     }
 
     steps {
@@ -48,9 +48,10 @@ object Build1 : BuildType({
         }
     }
 })
-
+/*
 object Repo2 : GitVcsRoot({
     name = "repo2"
     url = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
     branch = "refs/heads/master"
 })
+*/
