@@ -60,4 +60,11 @@ object Repo2 : GitVcsRoot({
 
 object Project2 : Project({
     name = "project2"
+
+    subProject(Project2_Project3)
+})
+
+
+object Project2_Project3 : Project({
+    name = "project3"
 })
