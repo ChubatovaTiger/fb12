@@ -31,6 +31,8 @@ project {
     vcsRoot(Repo2)
 
     buildType(Build1)
+
+    subProject(Project2)
 }
 
 object Build1 : BuildType({
@@ -53,4 +55,9 @@ object Repo2 : GitVcsRoot({
     name = "repo2"
     url = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
     branch = "refs/heads/master"
+})
+
+
+object Project2 : Project({
+    name = "project2"
 })
